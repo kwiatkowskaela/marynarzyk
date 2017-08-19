@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tworzymy funkcje</title>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Londrina+Outline|Londrina+Solid" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center">
+
+            <span class="label label-default">Kamień</span>
+            <span class="label label-info">Papier</span>
+            <span class="label label-default">Nożyczki</span>
+            <h2 class="word word--swing">Marynarzyk</h2>
+        </h3>
+    </div>
+    <div id="js-newGameElement" class="container">
+        <div class="row text-center">
+            <button id="js-newGameButton" class="btn btn-primary btn-lg">
+      Nowa GRA !
+    </button>
+        </div>
+    </div>
+    <div id="js-playerPickElement" class="container">
+        <div class="row text-center">
+            <button id="js-playerPick_rock" class="btn btn-primary btn-lg">
+      <span class="badge">
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+      </span>
+      Kamień
+    </button>
+            <button id="js-playerPick_paper" class="btn btn-primary btn-lg">
+      <span class="badge">
+      <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+      </span>
+      Papier
+    </button>
+            <button id="js-playerPick_scissors" class="btn btn-primary btn-lg">
+      <span class="badge">
+      <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+      </span>
+      Nożyczki
+    </button>
+        </div>
+    </div>
+    <div id="js-resultsTableElement" class="container">
+        <div class="row">
+            <div class="col-xs-5 text-center">
+                <span id="js-playerPoints" class="badge">
+      0
+      </span>
+                <span id="js-playerName">
+      Imię Gracza
+      </span>
+            </div>
+            <div class="col-xs-2 text-center">
+                Kontra
+            </div>
+            <div class="col-xs-5 text-center">
+                <span id="js-computerPoints" class="badge">
+      0
+      </span> Komputer
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 text-center">
+                <span id="js-playerPick">
+        Twój ruch.
+      </span>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5 text-center">
+                <span id="js-computerPick">
+        Ruch komputera.
+      </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 text-center">
+                <span id="js-playerResult">
+        Twoje punkty
+      </span>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5 text-center">
+                <span id="js-computerResult">
+        Punkty przeciwnika
+      </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/scripts.js">
+
+
+    </script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/demo4.js"></script>
+</body>
+
+</html>
